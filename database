@@ -1,0 +1,35 @@
+CREATE DATABASE IF NOT EXISTS `crud_db`;
+
+USE `crud_db`;
+
+CREATE TABLE IF NOT EXISTS `categorias` (
+    `id` INT(11) NOT NULL AUTO_INCREMENT,
+    `nome` VARCHAR(255) NOT NULL,
+    PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+CREATE TABLE IF NOT EXISTS `produtos` (
+    `id` INT(11) NOT NULL AUTO_INCREMENT,
+    `nome` VARCHAR(255) NOT NULL,
+    `descricao` TEXT,
+    `preco` DECIMAL(10, 2) NOT NULL,
+    `categoria_id` INT(11) NOT NULL,
+    `genero` TEXT NOT NULL,
+    `notas` TEXT NOT NULL,
+    `importante` TEXT NOT NULL,
+    PRIMARY KEY (`id`),
+    FOREIGN KEY (`categoria_id`) REFERENCES `categorias`(`id`) ON DELETE CASCADE
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+-- Inserir dados de exemplo na tabela categorias
+INSERT INTO `categorias` (`nome`) VALUES
+('Body Splash'),
+('Colônia'),
+('Perfume');
+
+-- Inserir dados de exemplo na tabela produtos
+INSERT INTO `produtos` (`nome`, `descricao`, `preco`, `categoria_id`, `genero`, `notas`, `importante`) VALUES
+('Lady emblem de Montblanc', 'Perfume feminino chipre frutado. Montblanc Lady Emblem traduz a elegância e a feminilidade de mulheres intensas e autoconfiantes. As notas iniciais trazem uma combinação de calor e sabor que vem da pimenta rosa e toranja rosa. O toque feminino vem do Jasmim, Rosa e Romã, que ganham um aspecto maduro e sensual com o fundo almiscarado. Delicado como uma rosa, o vidro de Montblanc Lady Emblem é multifacetado e traz o brilho do cristal com o toque coral do líquido do perfume.', 379.90, 3, 'Feminino', 'Saquê, Pimenta Rosa e Toranja Rosa. As notas de coração são: Jasmim e Romã. As notas de fundo são: Almíscar, Sândalo e Âmbar.', 'sim'),
+('Victorias Secret Body Splash Aqua Kiss 250ML', 'Victoria Secret Aqua Kiss Shimmer Body Splash 250ml é uma edição especial da fragrância clássica Aqua Kiss, agora com partículas cintilantes que proporcionam um brilho sutil e elegante à pele. Ideal para mulheres que desejam um toque extra de glamour no dia a dia. Características do Produto  Olfativa: Floral Aquático Notas Principais: Frésia branca, margarida e acordes aquáticos Ingredientes Adicionais: Aloe vera e camomila, que proporcionam suavidade e hidratação à pele(Magazine Luiza) Fragrância Refrescante: Combinação de notas florais e aquáticas que proporcionam uma sensação de frescor. Hidratação Leve: Enriquecido com aloe vera e camomila, oferece uma hidratação suave.  Design Elegante: Frasco em tons de azul com acabamento brilhante, refletindo a essência da fragrância. Victoria Secret Aqua Kiss Shimmer Body Splash é a escolha ideal para quem busca uma fragrância leve, fresca e com um toque de brilho para iluminar a pele. Perfeito para uso diário ou ocasiões especiais, adicionando um charme extra ao seu ritual de beleza.', 174.90, 1, 'Feminino', 'Olfativa: Floral Aquático Notas Principais: Frésia branca, margarida e acordes aquáticos', 'nao'),
+('Colônia Ekos Maracujá', 'Colônia Ekos maracujá. O perfumista que assina esta fragrância é Francisca Perez Areias. As notas de topo são: Maracujá, Bergamota, Mandarina, Alecrim, Anis e Maçã. As notas de coração são: Violeta, Lírio-do-Vale, Rosa e Jasmim. As notas de fundo são: Almíscar, Sândalo, Cedro e Musgo de Carvalho. única no mundo, nossa Perfumaria convida a um encontro de sensações, com fragrâncias intensas, suaves, frescas e elegantes para o dia, para a noite, para momentos especiais, para se sentir bem', 129.90, 2, 'Feminino', 'As notas de topo são: Maracujá, Bergamota, Mandarina, Alecrim, Anis e Maçã. As notas de coração são: Violeta, Lírio-do-Vale, Rosa e Jasmim. As notas de fundo são: Almíscar, Sândalo, Cedro e Musgo de Carvalho.', 'nao'),
+('Kaiak Natura Masculino', 'Kaiak Natura Masculino celebre a conexão entre o ser humano e a água com fragrâncias e produtos que capturam a essência revigorante deste elemento e oferecem uma experiência única e energética. O perfumista que assina esta fragrância é Eurico Mazzini.', 119.90, 3, 'Masculino', 'As notas de topo são: Bergamota, Limão de Amalfi, Cassis e Gálbano. As notas de coração são: Flor de Laranjeira Africana, Gerânio, Jasmim, Lírio-do-Vale e Madeiras Transparentes. As notas de fundo são: Musgo de Carvalho, Almíscar, Âmbar e Sândalo.', 'sim');

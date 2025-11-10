@@ -1,0 +1,189 @@
+body {
+    font-family: "DM Sans", sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #0B0B0B;
+    color: #0B0B0B;
+}
+
+.container {
+    width: 90%;
+    margin: 20px auto;
+    background-color: #0B0B0B;
+    padding: 20px;
+    box-shadow: 0 0 10px rgb(87, 56, 10);
+}
+
+.img{
+    margin-bottom: 10px;
+    padding: 0;
+    width: 100%;
+    text-align: center;
+}
+
+h1, h2 {
+    color: #C7A26E;
+    justify-self: center;
+    font-size: 30px;
+}
+
+nav {
+    margin-bottom: 20px;
+}
+
+
+nav a {
+    margin-right: 15px;
+    text-decoration: none;
+    color: #C7A26E;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #E4CDA7;
+}
+
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+td {
+    border: 1px solid #705225;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #705225;
+    color: #ebebeb;
+}
+
+tr:nth-child(even) {
+    background-color: #c4c4c4;
+}
+tr:nth-child(odd) {
+    background-color: #0B0B0B;
+    color: #FFF;
+}
+
+.button {
+    display: inline-block;
+    padding: 8px 15px;
+    margin: 5px 0;
+    background-color: #705225;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+}
+.button a{
+    justify-self: center;
+}
+
+.button:hover {
+    background-color: #000;
+}
+
+.button.edit {
+    background-color: #705225;
+    color: #f8e4be;
+}
+
+.button.edit:hover {
+    background-color: #0B0B0B;
+}
+
+.button.delete {
+    background-color: #705225;
+    color: #f8e4be;
+}
+
+.button.delete:hover {
+    background-color: #c82333;
+}
+
+form {
+    margin-top: 20px;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+form input[type="text"],
+form input[type="number"],
+form textarea,
+form select {
+    width: calc(100% - 22px);
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+form textarea {
+    resize: vertical;
+    min-height: 80px;
+}
+
+form button[type="submit"] {
+    background-color: #705225;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-right: 10px;
+}
+
+form button[type="submit"]:hover {
+    background-color: #218838;
+}
+
+.error {
+    color: #dc3545;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+
+
+.popup{
+    position: fixed;
+    padding: 30px;
+    justify-self: center;
+    align-self: center;
+    text-align: center;
+    background-color: #c4c4c4;
+    border-radius: 10px;
+    border: solid 2px #000000a2;
+    margin-bottom: 500px;
+    margin-right: 40px;
+    color: #0B0B0B;
+}
+.hidden{
+    display: none;
+}
+.actions{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+.popup:not(:target) {
+    visibility: hidden;
+    opacity: 0;
+}
