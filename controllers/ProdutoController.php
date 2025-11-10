@@ -1,6 +1,6 @@
 <?php
 
-/**************************
+/*********************************************************************************************************************
  Curso: Engenharia de Software
  Disciplina: Linguagem e Técnicas de Programacão
  Professor: Flores
@@ -16,7 +16,7 @@
             25181898-2 - Pedro Paulo Rodrigues Mardegam
  Data: 11 de Novembro de 2025
  Descritivo: Desenvolvimento de um Sistema CRUD em PHP com MySQL
- ***************************/
+ **********************************************************************************************************************/
 
 include_once '../config/database.php';
 include_once '../models/Produto.php';
