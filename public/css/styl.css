@@ -17,191 +17,191 @@
  **********************************************************************************************************************/
 
 body {
-    font-family: "DM Sans", sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #0B0B0B;
-    color: #0B0B0B;
+    font-family: "DM Sans", sans-serif; /* Fonte principal usada */
+    margin: 0; /* Remove margens padrão do navegador */
+    padding: 0;   /* Remove o espaçamento interno padrão do navegador */
+    background-color: #0B0B0B; /* Cor de fundo da página (um preto quase puro) */
+    color: #0B0B0B;  /* Define a cor padrão do texto */
 }
 
 .container {
-    width: 90%;
-    margin: 20px auto;
-    background-color: #0B0B0B;
-    padding: 20px;
-    box-shadow: 0 0 10px rgb(87, 56, 10);
+    width: 90%; /* Largura do container como 90% da largura */
+    margin: 20px auto; /* Centraliza o container horizontalmente e adiciona margem vertical de 20px */
+    background-color: #0B0B0B; /* Define a cor de fundo (preta) */
+    padding: 20px;  /* Adiciona espaçamento interno de 20px em todos os lados */
+    box-shadow: 0 0 10px rgb(87, 56, 10); /* Cria uma sombra ao redor do container (cor dourada escura) para destacar o conteúdo */
 }
 
 .img{
-    margin-bottom: 10px;
-    padding: 0;
-    width: 100%;
-    text-align: center;
+    margin-bottom: 10px;  /* Adiciona espaço abaixo do elemento (10px) */
+    padding: 0; /* Remove qualquer espaçamento interno */
+    width: 100%; /* Faz a imagem ocupar toda a largura disponível do container */
+    text-align: center; /* Centraliza o conteúdo */
 }
 
 h1, h2 {
-    color: #C7A26E;
-    justify-self: center;
-    font-size: 30px;
+    color: #C7A26E; /* Define a cor do texto dos títulos (dourado claro) */
+    justify-self: center; /* Centraliza o elemento dentro de um grid container */
+    font-size: 30px; /* Define o tamanho da fonte dos títulos como 30 pixels */
 }
 
 nav {
-    margin-bottom: 20px;
+    margin-bottom: 20px; /* Adiciona um espaço abaixo do menu de navegação (20px) pra separar dos outros elementos */
 }
 
 
 nav a {
-    margin-right: 15px;
-    text-decoration: none;
-    color: #C7A26E;
-    font-weight: bold;
+    margin-right: 15px;  /* Adiciona um espaço à direita para separar visualmente */
+    text-decoration: none; /* Remove o sublinhado padrão dos links */
+    color: #C7A26E; /* Define a cor dos links como o mesmo tom dourado dos títulos */
+    font-weight: bold; /* Deixa o texto dos links em negrito */
 }
 
 nav a:hover {
-    color: #E4CDA7;
+    color: #E4CDA7;   /* Muda a cor dos links para um dourado mais claro ao passar o mouse */
 }
 
 
 table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-top: 20px;
+    width: 100%; /* Faz a tabela ocupar toda a largura disponível do container */
+    border-collapse: collapse; /* Remove os espaços entre as bordas das células */
+    margin-top: 20px; /* Adiciona um espaço acima da tabela (20px) para separar dos outros elementos */
 }
 
 td {
-    border: 1px solid #705225;
+    border: 1px solid #705225; /* Uma borda fina de 1px, cor marrom-dourada */
 }
 
 th, td {
-    padding: 10px;
-    text-align: left;
+    padding: 10px; /* Adiciona espaçamento interno de 10px em todas as direções */
+    text-align: left; /* Alinha o conteúdo da célula à esquerda */
 }
 
 th {
-    background-color: #705225;
-    color: #ebebeb;
+    background-color: #705225; /* Fundo do cabeçalho com um tom marrom-dourado */
+    color: #ebebeb; /* Cor do texto do cabeçalho como um cinza bem claro */
 }
 
-tr:nth-child(even) {
-    background-color: #c4c4c4;
+tr:nth-child(even) { 
+    background-color: #c4c4c4;  /* Aplica um fundo cinza claro nas linhas pares */
 }
 tr:nth-child(odd) {
-    background-color: #0B0B0B;
-    color: #FFF;
+    background-color: #0B0B0B; /* Fundo preto escuro nas linhas ímpares */
+    color: #FFF; /* Texto branco para dar contraste com o fundo escuro */
 }
 
 .button {
-    display: inline-block;
-    padding: 8px 15px;
-    margin: 5px 0;
-    background-color: #705225;
-    color: white;
-    text-decoration: none;
-    border-radius: 6px;
-    border: none;
-    cursor: pointer;
+    display: inline-block; /* Faz o botão se comportar como um bloco em linha */
+    padding: 8px 15px; /* Define o espaçamento interno (8px vertical e 15px horizontal) */
+    margin: 5px 0; /* Adiciona uma margem vertical de 5px entre botões ou elementos próximos */
+    background-color: #705225;  /* Marrom-dourada (mesma usada na tabela) */
+    color: white; /* Cor do texto branca */
+    text-decoration: none;  /* Remove o sublinhado */
+    border-radius: 6px; /* Arredonda levemente os cantos (6px) */
+    border: none;  /* Remove a borda padrão do botão */
+    cursor: pointer;  /* Mostra o cursor de "mãozinha" ao passar o mouse, indicando que é clicável */
 }
 .button a{
-    justify-self: center;
+    justify-self: center; /* Centraliza o link dentro do botão */
 }
 
 .button:hover {
-    background-color: #000;
+    background-color: #000; /* Muda a cor de fundo para preto ao passar o mouse */
 }
 
 .button.edit {
-    background-color: #705225;
-    color: #f8e4be;
+    background-color: #705225; /* Cor de fundo marrom-dourada */
+    color: #f8e4be;  /* Cor do texto em tom bege claro */
 }
 
 .button.edit:hover {
-    background-color: #0B0B0B;
+    background-color: #0B0B0B; /* Escurece o fundo para preto, destacando a interação */
 }
 
 .button.delete {
-    background-color: #705225;
-    color: #f8e4be;
+    background-color: #705225;  /* Cor de fundo marrom-dourada */
+    color: #f8e4be; /* Cor do texto em tom bege claro */
 }
 
 .button.delete:hover {
-    background-color: #c82333;
+    background-color: #c82333; /* Muda o fundo para um vermelho intenso */
 }
 
 form {
-    margin-top: 20px;
-    background-color: #f9f9f9;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    margin-top: 20px; /* Adiciona espaço acima do formulário (20px) */
+    background-color: #f9f9f9;  /* Fundo do formulário em um cinza bem claro */
+    padding: 20px; /* Adiciona espaçamento interno (20px) entre o conteúdo e as bordas do formulário */
+    border-radius: 8px; /* Arredonda os cantos do formulário */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05); /* Aplica uma leve sombra */
 }
 
 form label {
-    display: block;
-    margin-bottom: 8px;
-    font-weight: bold;
+    display: block; /* Faz o label ocupar toda a largura */
+    margin-bottom: 8px; /* Adiciona espaço abaixo de cada label para separar do campo seguinte */
+    font-weight: bold; /* Deixa o texto do label em negrito */
 }
 
 form input[type="text"],
 form input[type="number"],
 form textarea,
 form select {
-    width: calc(100% - 22px);
-    padding: 10px;
-    margin-bottom: 15px;
-    border-radius: 4px;
-    box-sizing: border-box;
+    width: calc(100% - 22px); /* Largura total dos campos */
+    padding: 10px; /* Adiciona espaçamento interno de 10px em todos os lados */
+    margin-bottom: 15px; /* Espaço abaixo de cada campo, separando-os entre si */
+    border-radius: 4px; /* Arredonda levemente os cantos dos campos */
+    box-sizing: border-box; /* Inclui o padding e a borda no cálculo da largura total */
 }
 
 form textarea {
-    resize: vertical;
-    min-height: 80px;
+    resize: vertical; /* Permite redimensionar apenas a altura */
+    min-height: 80px; /* Altura mínima para o campo de texto */
 }
 
 form button[type="submit"] {
-    background-color: #705225;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 16px;
-    margin-right: 10px;
+    background-color: #705225; /* Cor de fundo marrom-dourada */
+    color: white; /* Cor do texto branca */
+    padding: 10px 20px;  /* Espaçamento interno: 10px vertical, 20px horizontal */
+    border: none; /* Tira a borda padrão */
+    border-radius: 5px;  /* Arredonda os cantos do botão */
+    cursor: pointer; /* Cursor em formato de “mão” ao passar o mouse */
+    font-size: 16px;  /* Tamanho da fonte do botão */
+    margin-right: 10px;  /* Adiciona espaço à direita */
 }
 
 form button[type="submit"]:hover {
-    background-color: #218838;
+    background-color: #218838; /* Muda o fundo para um verde */
 }
 
 .error {
-    color: #dc3545;
-    font-weight: bold;
-    margin-top: 10px;
+    color: #dc3545; /* Coloca a cor vermelha de erro */
+    font-weight: bold; /* Texto em negrito */
+    margin-top: 10px; /* Espaçamento superior */
 }
 
 
 
 .popup{
-    position: fixed;
-    padding: 30px;
-    justify-self: center;
+    position: fixed; /* Fixa a posição da janela na tela, independente do scroll */
+    padding: 30px;  /* Adiciona espaçamento interno de 30px */
+    justify-self: center; /* Centraliza horizontal e verticalmente */
     align-self: center;
-    text-align: center;
-    background-color: #c4c4c4;
-    border-radius: 10px;
-    border: solid 2px #000000a2;
-    margin-bottom: 500px;
-    margin-right: 40px;
-    color: #0B0B0B;
+    text-align: center;  /* Centraliza o conteúdo do texto dentro da popup */
+    background-color: #c4c4c4; /* Fundo cinza-claro */
+    border-radius: 10px; /* Bordas arredondadas */
+    border: solid 2px #000000a2; /* Borda preta com leve transparência */
+    margin-bottom: 500px; /* Ajustes de posição na tela */
+    margin-right: 40px; /* Ajustes de posição na tela */
+    color: #0B0B0B; /* Cor do texto preta */
 }
 .hidden{
-    display: none;
+    display: none; /* Oculta completamente o elemento da página */
 }
 .actions{
-    display: flex;
-    gap: 20px;
-    justify-content: center;
+    display: flex; /* Exibe os itens lado a lado */
+    gap: 20px;  /* Espaçamento de 20px entre os elementos dentro do container */
+    justify-content: center; /* Centraliza o conjunto de ações na tela */
 }
 .popup:not(:target) {
-    visibility: hidden;
-    opacity: 0;
+    visibility: hidden; /* Torna a popup invisível quando não é o alvo de um link âncora */
+    opacity: 0;  /* Define opacidade 0 para que desapareça suavemente */
 }
